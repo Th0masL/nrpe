@@ -580,8 +580,8 @@ MAKEFLAGS=
 # Identity of this package.
 PACKAGE_NAME='nrpe'
 PACKAGE_TARNAME='nrpe'
-PACKAGE_VERSION='newdate'
-PACKAGE_STRING='nrpe newdate'
+PACKAGE_VERSION='3.2.1'
+PACKAGE_STRING='nrpe 3.2.1'
 PACKAGE_BUGREPORT='nagios-users@lists.sourceforge.net'
 PACKAGE_URL='https://www.nagios.org/downloads/nagios-core-addons/'
 
