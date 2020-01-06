@@ -10,13 +10,13 @@
 %if %{islinux}
 	%define _init_dir @initdir@
 	%define _init_type @init_type@
-	%define _exec_prefix %{_prefix}/sbin
-	%define _bindir %{_prefix}/sbin
-	%define _sbindir %{_prefix}/lib/nagios/cgi
-	%define _libexecdir %{_prefix}/lib/nagios/plugins
-	%define _datadir %{_prefix}/share/nagios
-	%define _localstatedir /var/log/nagios
-	%define nshome /var/log/nagios
+	%define _exec_prefix @exec_prefix@
+	%define _bindir @bindir@
+	%define _sbindir @sbindir@
+	%define _libexecdir @libexecdir@
+	%define _datadir @datadir@
+	%define _localstatedir @localstatedir@
+	%define nshome /var/lib/nagios
 	%define _make make
 	%define _piddir @piddir@
 %endif
