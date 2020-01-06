@@ -18,6 +18,7 @@
 	%define _localstatedir /var/log/nagios
 	%define nshome /var/log/nagios
 	%define _make make
+	%define _piddir @piddir@
 %endif
 %define _sysconfdir /etc/nagios
 
@@ -140,6 +141,7 @@ MAKE=%{_make} ./configure \
 	--datadir=%{_datadir} \
 	--sysconfdir=%{_sysconfdir} \
 	--localstatedir=%{_localstatedir} \
+	--with-piddir=%{_piddir} \
 	--enable-command-args
 %{_make} all
 
