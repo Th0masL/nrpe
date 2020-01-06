@@ -87,6 +87,11 @@ fi
 case "$1" in
 
 start)
+	# Create the folder for the PID file if missing
+	if [ ! -d $(dirname "${PID_FILE}") ]; then
+		mkdir -p $(dirname "${PID_FILE}")
+	fi
+
 	# Start daemons.
 	$MSG_CMD "Starting nrpe "
 	$START_CMD $NRPE_BIN -c $NRPE_CFG -d
