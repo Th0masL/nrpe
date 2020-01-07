@@ -829,7 +829,7 @@ psdir='${docdir}'
 libdir='${exec_prefix}/lib'
 localedir='${datarootdir}/locale'
 mandir='${datarootdir}/man'
-piddir='${prefix}/var/run/nrpe'
+piddir='/var/run/nrpe'
 
 ac_prev=
 ac_dashdash=
